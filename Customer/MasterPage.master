@@ -1,0 +1,91 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="Customer_MasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <link href="jquery.dataTables.css" rel="stylesheet" />
+    <link href="../Content/bootstrap.css" rel="stylesheet" />
+    <link href="../Content/Site.css" rel="stylesheet" />
+    <script src="../Scripts/jquery-1.10.2.js"></script>
+    <script src="../Scripts/modernizr-2.6.2.js"></script>
+    <script src="../Scripts/respond.js"></script>
+    <script src="../Scripts/respond.min.js"></script>
+    <script src="../Scripts/bootstrap.js"></script>
+    <script src="../Scripts/WebForms/GridView.js"></script>
+    <script src="jquery.dataTables.js"></script>
+
+
+
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style>
+        @media (min-width: 979px) {
+            ul.nav li.dropdown:hover > ul.dropdown-menu {
+                display: block;
+            }
+        }
+    </style>
+    <form id="form1" runat="server">
+
+
+        <div>
+            <div class="navbar navbar-default navbar-fixed-top" id="navbar">
+                <div class="container">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" runat="server" href="#">Saudi Reservation </a>
+                    </div>
+                    <div class="navbar-collapse collapse">
+                        <ul class="nav navbar-nav">
+                            <li class="dropdown">
+                                <a class="dropdown-toggle" data-toggle="dropdown" href="#">Flight
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="FlightSearch.aspx">Flight Search</a></li>
+                                    <li><a href="Booking.aspx">Flight Booking</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a class="dropdown-toggle" data-toggle="dropdown" href="#">Hotel
+                                </a>
+                                <ul class="dropdown-menu">
+
+                                    <li><a href="HotelSearch.aspx">Hotel Search</a></li>
+                                    <li><a href="Hotilbooking.aspx">Hotel Booking</a></li>
+                                </ul>
+                            </li>
+
+
+
+                            <li><a runat="server" href="PackageSearch">Package Search</a></li>
+
+
+                        </ul>
+                        <ul class="nav navbar-nav navbar-right">
+
+                            <li>
+                                <asp:LinkButton ID="LinkButton1" runat="server" OnClick="Button1_Click">Logout</asp:LinkButton></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="container body-content">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+                <hr />
+                <footer>
+                    <p>&copy; <%: DateTime.Now.Year %> -Saudi Reservation</p>
+                </footer>
+            </div>
+        </div>
+    </form>
+</head>
+<body>
+</body>
+</html>
