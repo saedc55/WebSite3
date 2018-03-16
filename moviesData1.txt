@@ -17,6 +17,12 @@
       "tagline": "هذه الميزة متوفره في التطبيق",
       "image": "https://firebasestorage.googleapis.com/v0/b/tips-919.appspot.com/o/cash-icon.png?alt=media&token=fe486b3d-19f4-4d11-8ce3-5a93cab0cc73",
       "story": "تم إضافة خطة للإدخار لأي شيء تريده بناء على لوغاريثم خاصة بحساب الراتب واقتصاص منه جزء للادخار"
+    },
+    {
+      "movie": "لا تثق في العروض البنكية ابدًا !",
+      "tagline": "",
+      "image": "https://firebasestorage.googleapis.com/v0/b/tips-919.appspot.com/o/card.jpg?alt=media&token=58b8845b-3e82-430e-8e03-e996e1049350",
+      "story": "أغلب العروض تكن وهميه بالغالب وفي اقل تقدير ستضطر الى ارجاع المبلغ مضافًا "
     }
     ]
 }
